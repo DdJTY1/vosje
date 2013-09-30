@@ -13,13 +13,22 @@
                 password = that.get("password").trim();
 
             if (username === "" || password === "") {
-                navigator.notification.alert("Both fields are required!",
+                navigator.notification.alert("Both fields are required lul!",
                     function () { }, "Login failed", 'OK');
 
                 return;
             }
+            
+            if (username === "kenny" || password === "poef") {
+                that.set("isLoggedIn", true);    
+            } else {
+              navigator.notification.alert("Fout, lul!",
+                    function () { }, "Login failed", 'OK');
 
-            that.set("isLoggedIn", true);
+                return;  
+            }
+
+            
         },
 
         onLogout: function () {
