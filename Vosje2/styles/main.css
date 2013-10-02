@@ -16,6 +16,9 @@ body, html {
     color:#42454a;
     font-size:1.1em;
 }
+h4{
+    margin-top:27px;
+}
 .view-content p{
     color:#4a4e54;
     font-size:1em;
@@ -24,7 +27,8 @@ body, html {
 /* IMAGE STYLES*/
 .img {
     background-image:url(../styles/images/logoVos.png);
-    background-repeat:no-repeat;
+    background-repeat:no-repeat;    
+    background-position:center;
     text-align:center;
     width:320px;
     height:193px;
